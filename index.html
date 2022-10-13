@@ -1,49 +1,70 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Resume</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Background</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
-
-<body>      
-    <div class="container">
-        <!-- Nav Bar -->
-        <nav>
-            <a href="https://github.com/Failzuma" class="li-navbar">Failzuma</a>
+<body>
+    <div class="header">
+        <div class="container">
+            <!-- Navbar -->
             <div class="navbar-container">
                 <ul class="ul-navbar">
                     <li class="li-navbar">
-                        <a href="#" class="a-navbar">Home</a>
+                        <a href="#" class="text-decoration-none a-navbar text-reset">Home</a>
                     </li>
                     <li class="li-navbar">
-                        <a href="about.html" class="a-navbar">About me</a>
+                        <a href="/" class="text-decoration-none a-navbar text-reset">About me</a>
                     </li>
                     <li class="li-navbar">
-                        <a href="contact.html" class="a-navbar">Contacts</a>
+                        <a href="/" class="text-decoration-none a-navbar text-reset">Contacts</a>
                     </li>
                 </ul>
             </div>
-        </nav>    
-        <!-- Nav Bar End -->
+            <!-- Navbar End -->
 
-        <!-- Isi -->
-        <div class="container-isi">
-            <a href="https://github.com/Failzuma" class="a-content">
-                <img src="pepesadge.png" class="img-content" />
-                <p style="font-family:cursive">Check out my GitHub Profile</p>
-            </a>
+        <!--Content before waves-->
+        <div class="inner-header flex">
+                <!-- Isi -->
+                <div class="container-isi">
+                    <a href="https://github.com/Failzuma" class="a-content">
+                        <img width="250" src="Chisato.jpg" class="img-content" />
+                        <p>Check out my GitHub Profile</p>
+                         <!--Ini dari JS -->
+                        <div id="introductions"></div>
+                        <!-- JS End -->
+                    </a>
+                </div>
+                <!-- Isi End -->
+               </div>
+            </body>
         </div>
-        <!-- Isi End -->
-
+        
+        <!--Waves Container-->
+        <div>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+        </g>
+        </svg>
+        </div>
+        <!--Waves end-->
+        </div>
         <!-- Footer -->
         <div class="container-footer">
-            <h1 class="h1-footer">Web under construction</h1>
-        </div>
-        <!-- Footer End -->
-    </div>
+            <h1 class="text-center h1-footer">Web under construction</h1>
+         </div>
+         <!-- Footer End -->
 </body>
-
 </html>

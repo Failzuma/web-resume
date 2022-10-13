@@ -65,7 +65,7 @@ p {
     height: 10vh;
     display: flex;
     justify-content: right;
-    margin-left: 200px;
+    margin-left: 280px;
 }
 .ul-navbar{
     display: flex;
@@ -74,7 +74,7 @@ p {
 .li-navbar{
     list-style-type: none;
     padding: 10px;
-    margin: 5px;
+    margin-left: 30px;
     font-size: 25px;
     text-decoration: none;
     color: black;
